@@ -13,39 +13,52 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#mywork">MY WORK</a></li>
-            <li><a href="#aboutme">ABOUT ME</a></li>
-        </ul>
-    </nav>
-
-    <h1>
-        Sean Gentry
-    </h1>
-
-    <h4>
-        Mechanical Engineering and Computer Science Student at Vanderbilt University based in Nashville, TN
-    </h4>
-</header>
+<div class="frontpage">
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li class="nav-option"><a href="#contact">CONTACT</a></li>
+                <li class="nav-option"><a href="#my-work">MY WORK</a></li>
+                <li class="nav-option"><a href="#about-me">ABOUT ME</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="headline">
+        <h1 class="name">
+            Sean Gentry
+        </h1>
+    
+        <h4 class="desc">
+            Mechanical engineering and computer science student at Vanderbilt University based in Nashville, TN.
+        </h4>
+    </div>
+</div>
 
 <body>
-    <div class="contact-page">
-        <div>
-            <h2 id="aboutme">
-                About Me
-            </h2>
-            <img src="./images/icons/me.png" width="200" height="200">
-            <p>
-                I'm a student at Vanderbilt University studying mechanical engineering and 
-                computer science as a Questbridge Scholar. My work includes 3D models and coding projects. Below is my
-                contact info and some projects I've been working on recently.
-            </p>
-            <a href="./pdf/Sean_Gentry_01-2024.pdf">My Resume</a>
-    
+    <section class="about-me">
+        <h2 id="about-me">
+            About Me
+        </h2>
+        <div class="about-me-content">
+            
+            <img class="handsome-face" src="./images/icons/me.png" width="400" height="400">
+            
+            <div class="text">
+                <p>
+                    I'm a student at Vanderbilt University studying mechanical engineering and 
+                    computer science as a Questbridge Scholar. My work includes 3D models and coding projects. Below is my
+                    contact info and some projects I've been working on recently.
+                </p>
+                <a class="link" href="./pdf/Sean_Gentry_01-2024.pdf">
+                    My Resume
+                    <img src="./images/icons/document-icon.png">
+                </a>
+            </div>
         </div>
+            
+    </section>
+    <section>
         <h2 id="contact">
             Contact
         </h2>
@@ -62,9 +75,10 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="work">
-        <h2 id="mywork">
+    </section>
+
+    <section class="work">
+        <h2 id="my-work">
             My Work
         </h2>
         <div class="project">
@@ -96,7 +110,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    <section>
 </body>
 
 </html>
