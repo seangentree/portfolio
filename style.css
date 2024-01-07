@@ -40,11 +40,11 @@ https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand
     height: 2px;
     width: 0px;
     background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
 .nav-option:hover:after {
     width: 100%;
     background: #ffbf00;
-    transition: width .5s ease, background-color .5s ease;
 }
 
 .main-nav {
@@ -55,7 +55,7 @@ https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand
 }
 
 .frontpage {
-    background-image: url(./images/icons/background.png);
+    background-image: url(./images/icons/background1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -112,16 +112,18 @@ section h2:after {
 .link {
     text-decoration: none;
     color: white;
+    background-color: #ffbf00;
     margin: 10px 10px 10px 0px;
     padding: 7px 7px;
-    border: 2px solid #ffbf00;
+    border: 2px solid #ffbf0000;
     display: flex;
     align-items: center;
     width: fit-content;
+    transition: background-color .5s ease, border .5s ease;
 }
 .link:hover {
-    background-color: #ffbf00;
-    transition: background-color .5s ease;
+    border: 2px solid #ffbf00;
+    background-color: #ffbf0000;
 }
 .link img{
     max-height: 1.5rem;
