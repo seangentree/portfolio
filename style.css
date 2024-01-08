@@ -37,7 +37,7 @@ https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand
     content: "";
     display: block;
     margin: auto;
-    height: 2px;
+    height: 3px;
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
@@ -92,8 +92,8 @@ section h2:after {
     display: block;
     background: #ffbf00;
     width: 3em;
-    height: 2px;
-    margin: .1em 0 0 -.2em
+    height: 3px;
+    margin: 0 0 0 -.2em
 }
 
 .about-me-content {
@@ -109,27 +109,71 @@ section h2:after {
     }
 }
 
-.link {
+.link-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
     text-decoration: none;
     color: white;
+
     background-color: #ffbf00;
     margin: 10px 10px 10px 0px;
     padding: 7px 7px;
     border: 2px solid #ffbf0000;
-    display: flex;
-    align-items: center;
-    width: fit-content;
     transition: background-color .5s ease, border .5s ease;
 }
-.link:hover {
+.link-button:hover {
     border: 2px solid #ffbf00;
     background-color: #ffbf0000;
 }
-.link img{
+.link-button img {
     max-height: 1.5rem;
     max-width: 1.5rem;
     padding-left: 5px;
-
 }
 
+.contact-links{
+    display: flex;
+    justify-content: center;
+}
+.contact-links ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.contact-links a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+.contact-link {
+    margin-left: 5vh;
+    font-size: 1.25rem;
+}
+
+.contact-link:last-child {
+    margin-right: 5vh;
+}
+
+.contact-link img {
+    max-height: 2rem;
+    max-width: 2rem;
+    padding-left: 5px;
+}
+
+.contact-link:after {
+    content: "";
+    display: block;
+    margin: 3px auto auto auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.contact-link:hover:after {
+    width: 90%;
+    background: #ffbf00;
+}
 
