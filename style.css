@@ -141,6 +141,7 @@ section h2:after {
     align-items: center;
     list-style-type: none;
 }
+
 .contact-links a {
     display: flex;
     justify-content: center;
@@ -149,8 +150,20 @@ section h2:after {
     color: white;
 }
 .contact-link {
-    margin-left: 5vh;
+    margin: 0 5vh;
     font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .contact-links ul {
+        display: block;
+        align-items: center;
+        list-style-type: none;
+    }
+    .contact-link {
+        margin: 0 5vh 2vh 5vh;
+        font-size: 1.25rem;
+    }
 }
 
 .contact-link:last-child {
@@ -175,5 +188,20 @@ section h2:after {
 .contact-link:hover:after {
     width: 90%;
     background: #ffbf00;
+}
+
+.project {
+    border: 2px solid;
+}
+.desc {
+    border: 2px solid;
+}
+.about-project {
+    display: flex;
+}
+@media (max-width: 1000px) {
+    .about-project {
+        display:block;
+    }
 }
 
