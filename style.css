@@ -16,17 +16,13 @@ header ul{
 
 .nav-option {
     display:inline-block;
-    padding: 10px 5% 10px 0;
+    padding: 10px 5% 10px 5%;
 }
 .nav-option a {
     text-decoration: none;
     color: white;
-    margin: 10px 10px 10px 10px;
-    padding: 7px 7px;
-}
-.nav-option:last-child {
-    margin-right: 0px;
-    
+    margin: 10px;
+    padding: 7px;
 }
 
 /* Creates an invisible character who's background
@@ -48,8 +44,7 @@ https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand
 }
 
 .main-nav {
-    text-align: right;
-    padding-right: 10%;
+    text-align: center;
     background-color: #161618aa;
     margin: 0px;
 }
@@ -67,8 +62,19 @@ https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand
     padding-bottom: 20%;
     text-align: center;
 }
-.name {
+.headline .name {
     font-size: 3rem;
+}
+.name:after {
+    content: "";
+    display: block;
+    width: 8ch;
+    background: #ffbf00;
+    height: 5px;
+    margin: auto;
+}
+.headline h4 {
+    font-size: 1.5rem
 }
 
 .handsome-face {
