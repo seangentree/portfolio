@@ -155,42 +155,40 @@ section h2:after {
     align-items: center;
     color: white;
 }
+
 .contact-link {
     margin: 0 5vh;
     font-size: 1.25rem;
-}
 
-@media (max-width: 600px) {
-    .contact-links ul {
-        display: block;
-        align-items: center;
-        list-style-type: none;
-    }
-    .contact-link {
-        margin: 0 5vh 2vh 5vh;
-        font-size: 1.25rem;
-    }
+    border: 2px solid;
+    background-color: #ffbf00;
+    margin: 10px 5vw;
+    padding: 7px 7px;
+    border: 2px solid #ffbf0000;
+    transition: background-color .5s ease, border .5s ease;
 }
-
+.contact-link:hover {
+    border: 2px solid #ffbf00;
+    background-color: #ffbf0000;
+}
 .contact-link img {
     max-height: 2rem;
     max-width: 2rem;
     padding-left: 5px;
 }
 
-.contact-link:after {
-    content: "";
-    display: block;
-    margin: 3px auto auto auto;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
+@media (max-width: 1000px) {
+    .contact-links ul {
+        display: block;
+        align-items: center;
+        list-style-type: none;
+    }
+    .contact-link {
+        margin: 2vh 5vh;
+        font-size: 1.25rem;
+    }
 }
-.contact-link:hover:after {
-    width: 90%;
-    background: #ffbf00;
-}
+
 
 .project {
     border-top: 1px solid #ffbf00;
