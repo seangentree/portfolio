@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Sean, Gentry, Sean Gentry, Computer Science, Mechanical Engineer, Intern, Resume, Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta name="author" content="Sean Gentry">
     <link rel="shortcut icon" type="image/png" href="./images/icons/favicon.png">
 
@@ -14,19 +14,124 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<div>
+<div class="rose-front">
+    <!--
+        TODO: 
+    -->
     <header>
-        <nav class="main-nav">
+        <nav class="rose-nav">
             <ul>
-                <li class="nav-option"><a href="#my-work">HOME</a></li>
+                <li class="nav-option"><a href="index.html">HOME</a></li>
             </ul>
         </nav>
     </header>
     
-    <h1>Rose</h1>
+    <h1 class="name">Rose</h1>
     <h4>
         This is the 3D model and animation showcase of my "Rose in a Pot". Starting as an idea in my head 
         for my mother, into a sketch, into a 3D model on my computer and ending 
         with a nice animation.
     </h4>
 </div>
+
+<body class="rose-body">
+    <section>
+        <h2>
+            Process
+        </h2>
+        <div class="section-body">
+            <div class="step">
+                <p>
+                    I first started with an idea to 3D print a rose for my mom for her
+                    Christmas present. However my university's 3D printers stations were
+                    closed for winter break when I asked about printing, so I settled with making a model.
+                </p>
+            </div>
+            <div class="images-step step"> 
+                <div class="step-images">
+                    <img class="doc1" src="images/rose-documentation/refs/rose-templates.png">
+                    <img class="doc2" src="images/rose-documentation/refs/rose-template1.png">
+                </div>
+                <p>
+                    It started with this group of sketches on a lab notebook, and I ended up choosing
+                    the sketch shown as my baseline. I first tried to get a leaf shape by
+                    drawing a spiral and experimenting with bulb shapes, but after some attempts I got 
+                    a bulb shape I liked. In the notes you can see I wrote "plan 2..." but that's the one
+                    I decided to go with first. All it took was an annotation to mesh and controlled dissolve.
+                </p>
+            </div>
+            <div class=" images-step step">
+                <div class="step-images">
+                    <img class="doc1" src="./images/rose-documentation/screenies/rose-extrusion.png"></img>
+                    <img class="doc2" src="./images/rose-documentation/screenies/bulb+stem-skelly.png"></img>
+                </div>
+                <p>
+                    After implementing the petal design as a reference and into a mesh, I then
+                    extruded the petals and scaled the extrusion down to make a cone-like shape.
+                    With the cone like shape, I then added subdivisions to produce a bowl-like shape which
+                    produced the mesh you see. However, I flatted the bowl shape to produce the skeleton
+                    you see. On the skeleton you can see the initial pattern as well as the stem I made.
+                    The stem was made simply by making a small circle face at the bottom of the bulb, 
+                    extruding it, scaling the end to be smaller, and adding controlled cuts to add a unique 
+                    bending shape.
+                </p>
+            </div>
+            <div class=" images-step step">
+                <div class="step-images">
+                    <img class="doc1" src="./images/rose-documentation/refs/leaf-template.png"></img>
+                    <img class="doc2" src="./images/rose-documentation/refs/leaf-template2.png"></img>
+                </div>
+                <p>
+                    Next came the leaves, which arguably took more effort than the bulb. Here were the starting
+                    sketches for my leaves, in which I only sketched half of the leaf so I can later
+                    mirror it across the vertical axis. One problem I came across when annotating over the reference
+                    in blender is the different strokes would not count as the same edge, and the face couldn't be filled,
+                    however adding the connections manually to the strokes made it possible to make the faces.
+                </p>
+            </div>
+            <div class=" images-step step">
+                <div class="step-images">
+                    <img class="doc1" src="./images/rose-documentation/screenies/leaf.png"></img>
+                    <img class="doc2" src="./images/rose-documentation/screenies/trileaf.png"></img>
+                </div>
+                <p>
+                    After forming the plane that would be my leaf, I then added the face and ended up with a flat
+                    leaf! To make the tri-leaf pattern, I simply duplicated the face, scaled it to a new size, 
+                    rotated it a bit, and made the stem intersect with the biggest leaf's stem. Then to add depth I used a
+                    portional scaling on the z-axis, adding a more natural look of a leaf being affected by gravity.
+                </p>
+            </div>
+            <div class=" images-step step">
+                <div class="step-images">
+                    <img class="doc1" src="./images/rose-documentation/screenies/full-blank-rose.png"></img>
+                    <img class="doc2" src="./images/rose-documentation/screenies/full-blank-rose-topview.png"></img>
+                </div>
+                <p>
+                    And finally, after adding a couple of tri-leaf patters, I came to a nice looking flower.
+                    Adding the leaves at different angles and sizes did the job of looking like a variety. 
+                    Afterwards, I added color with Blender materials and created a flower pot to showcase the flower.
+                    After adding a backdrop I made my showcase animation ended up with a beautiful 3D model.
+                </p>
+            </div>
+            <div class="step">
+                <h2>Final Results</h2>
+                <div class="final-vid">
+                    <video autoplay loop muted playsinline>
+                        <source src="./other-media/roseExhibit.mp4" type="video/mp4">
+                        Your browser does not support this video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="home-button">
+                <a class="link-button" href="index.html">
+                    Head back to home?
+                    <img src="./images/icons/chevron-left.png"></img>
+
+                    <!-- Credits for icon
+                        <a target="_blank" href="https://icons8.com/icon/40024/chevron-left">Chevron Left</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    -->
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
